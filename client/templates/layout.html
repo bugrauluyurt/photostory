@@ -1,0 +1,18 @@
+<body>
+	{{renderPage}}
+</body>
+
+<template name="layout">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="twitter-loginButton">
+					{{> loginButtons}}
+				</div>
+				<h1>Photostory</h1>
+				{{> flashMessages}}
+				{{> yield}}
+			</div>
+		</div>	
+	</div>
+</template>
